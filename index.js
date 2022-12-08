@@ -1,21 +1,17 @@
 function isPalindrome(word) {
-    let splitWord= word.split("");
-    let reversedSplit= splitWord.reverse();
-    let reversedWord= reversedSplit.join("")
+    // let splitWord= word.split("");
+    // let reversedSplit= splitWord.reverse();
+    // let reversedWord= reversedSplit.join("")
+
+    // can also be written as 
+    const reversedWord= word.split("").reverse().join("")
     if (word===reversedWord){
       return true 
     }
     else
       return false
   }
-  //console.log(isPalindrome('robot'))
-
-
-
-
-
-
-
+  
   // Write your algorithm here
   // check if a word/string is the same when reversed
   // 1. spit the string
@@ -42,11 +38,10 @@ else return false
   Add written explanation of your solution here
 */
 
- // console.log(isPalindrome('racecar'))
   
 
 
-/* You can run `node index.js` to view these console logs
+//You can run `node index.js` to view these console logs
 if (require.main === module) {
   // add your own custom tests in here
   console.log("Expecting: true");
@@ -59,4 +54,3 @@ if (require.main === module) {
 }
 
 module.exports = isPalindrome;
-*/
